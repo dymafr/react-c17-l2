@@ -12,21 +12,3 @@
     cursor: pointer;
   }
 }
-
-.headerList {
-  @include mixin.xs {
-    display: none;
-  }
-}
-
-.headerXs {
-  display: none !important;
-  cursor: pointer;
-  transition: opacity 0.2s;
-  &:hover {
-    opacity: 0.8;
-  }
-  @include mixin.xs {
-    display: block !important;
-  }
-}
