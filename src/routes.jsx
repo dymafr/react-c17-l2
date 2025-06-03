@@ -1,21 +1,20 @@
-import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router';
 import App from './App';
 import Homepage from './pages/Homepage/Homepage';
 import Profile from './pages/Profile/Profile';
 
-export const router = createBrowserRouter([
+export const ROUTER = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    Component: App,
     children: [
       {
         path: '/',
-        element: <Homepage />,
+        Component: Homepage,
       },
       {
         path: '/profile',
-        element: <Profile />,
+        Component: Profile,
       },
     ],
   },
