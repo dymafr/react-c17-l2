@@ -9,11 +9,10 @@ export const ROUTER = createBrowserRouter([
     Component: App,
     children: [
       {
-        path: '/',
         Component: Homepage,
       },
       {
-        path: '/profile',
+        path: 'profile',
         Component: Profile,
       },
     ],
