@@ -9,6 +9,7 @@ export const ROUTER = createBrowserRouter([
     Component: App,
     children: [
       {
+        path: '/',
         Component: Homepage,
       },
       {
